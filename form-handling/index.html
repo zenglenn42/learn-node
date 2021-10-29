@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Form Data</title>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link href="style.css" rel="stylesheet">
+  <script type="text/javascript" src="client.js"></script>
+</head>
+<body>
+
+  <h2>Simple Form Processing</h2>
+  <p>
+  This application submits form data in the body of a POST request to a server.  The server then parses, validates, and JSON-ifies that data and sends it back down to the client, completing a round trip.
+  </p>
+  <hr/>
+  <form id="simple-form" method="post" name="simple">
+    Name: <input name="name" type="text" required/></br>
+    Age:  <input name="age"  type="text" required/></br>
+    </hr>
+    <input type="submit" value="Submit Form" />
+    <input type="reset"  value="Reset" />
+  </form>
+
+  <hr/>
+
+  <h3>Returned by Server</h3>
+  HTTP Status Code: <div id="codeDiv"> </div>
+  HTTP Status Text: <div id="textDiv"> </div>
+  JSON: <div id="jsonDiv"> </div>
+
+  <hr/>
+
+  <h3>Browser Status</h3>
+  <div id="browserStatusDiv"></div>
+  <script type="text/javascript">
+
+    // We're using an ajaxy fetch call in submitForm() instead
+    // of an old-school action="http://host:port/form" attribute 
+    // in the <form> tag.
+
+    document.addEventListener('DOMContentLoaded', () => {
+      let formId = "simple-form"
+      let formEl = document.getElementById(formId)
+      if (formEl) {
+        formEl.addEventListener("submit", submitForm)
+        formEl.addEventListener("reset", resetForm)
+      }
+    })
+  </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+body {
+  font-family: Sans-Serif;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  background-color: darkgray;
+  color: white;
+  font-size: large;
+  letter-spacing: 1.5px;
+}
+
+input[type=submit], input[type=reset] {
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-size: large;
+  border-radius: 4px;
+}
+
+input[type=reset] {
+  background-color: gray;
+}
+
+#jsonDiv, #codeDiv, #textDiv, #browserStatusDiv {
+  width:100%;
+  padding: 12px 10px;
+  margin: 8px 0;
+  letter-spacing: 1.5px;
+  border: 1px solid darkgray;
+  box-sizing: border-box;
+  background-color: lightgray;
+  color: black;
+}
+
+#browserStatusDiv {
+  color: red;
+}
