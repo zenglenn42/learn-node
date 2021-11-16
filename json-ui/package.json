@@ -1,0 +1,16 @@
+{
+  "name": "json-ui",
+  "version": "1.0.0",
+  "description": "Illustrates a template-driven user interface",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mustache": "^4.2.0"
+  }
+}

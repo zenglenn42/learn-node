@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Template UI</title>
+    
+    <!-- Meta -->
+    
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    
+    <!-- Templating engine                                          -->
+
+    <script src="mustache.js" type="text/javascript"></script>
+    
+    <!-- Script to render page html from template & json.           -->
+    <!-- (PAGE_NAME gets replaced with 'home.js' on the server when -->
+    <!-- index.html is requested.)                                  -->
+
+    <script src="{{PAGE_NAME}}" type="text/javascript"></script>
+  </head>
+
+  <body>
+    Loading... If this fails to disappaer in a second, then look in your
+    Javascript console for errors.
+  </body>
+
+</html>
