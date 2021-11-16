@@ -20,5 +20,3 @@ This [node server](form-handling/server.js) illustrates how to process incoming 
 ## [JSON UI](#contents)
 
 This is a very simple example of creating a JSON-driven user interface using the mustache template engine on the client to transform JSON and an HTML template from the server into a client-rendered HTML page.
-
-This 
